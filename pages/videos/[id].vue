@@ -5,6 +5,10 @@
 </template>
 
 <script setup>
+definePageMeta({
+  layout: "show",
+});
+
 const route = useRoute();
 
 const id = computed(() => route.params.id);
