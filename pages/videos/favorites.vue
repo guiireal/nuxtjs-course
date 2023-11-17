@@ -11,20 +11,20 @@
         frameborder="0"
       />
       <div>
-        <button @click="deleteFavorite(favorite.id)">Remover favorito</button>
+        <button @click="deletefavorite(favorite.id)">Remover favorito</button>
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-const favorites = useFavorites();
+const videoStore = useVideoStore();
+const { favorites } = storeToRefs(videoStore);
 
-const deleteFavorite = (id: number) => {
-  const filteredFavorites = favorites.value.filter(
-    (favorite) => favorite.id !== id
-  );
+const { $toast } = useNuxtApp();
 
-  favorites.value = filteredFavorites;
+const deletefavorite = (id: number) => {
+  videoStore.deleteFavorite(id);
+  $toast.error("Removido com sucesso!");
 };
 </script>

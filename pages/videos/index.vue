@@ -4,7 +4,7 @@
   <div class="videos">
     <div v-for="video in videos" :key="video.id">
       <h2>{{ video.title }}</h2>
-      <p>{{ convertBrasilianDate(video.created_at) }}</p>
+      <p v-date-hour="'dd/mm/aaaa'">{{ video.created_at }}</p>
       <iframe
         width="550"
         height="400"
@@ -48,17 +48,13 @@ const videos: Video[] = [
     created_at: "2023-10-05",
   },
 ];
+const { $toast } = useNuxtApp();
 
-const favorites = useFavorites();
+onMounted(() => {
+  $toast.success("Vídeos carregados com sucesso!");
+});
 
-const convertBrasilianDate = (date: string) => {
-  const [year, month, day] = date.split("-");
-  return `${day}/${month}/${year}`;
-};
-
-const addFavorite = (video: Video) => {
-  favorites.value.push(video);
-};
+const { addFavorite } = useVideoStore();
 </script>
 
 <style scoped>
