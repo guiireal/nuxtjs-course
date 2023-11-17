@@ -1,5 +1,6 @@
 <template>
+  <TheHeader />
   <div>Página inicial</div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup></script>

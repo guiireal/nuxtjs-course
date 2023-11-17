@@ -2,4 +2,4 @@
   <div>Lista</div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup></script>
