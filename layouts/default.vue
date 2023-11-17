@@ -1,7 +1,7 @@
 <template>
   <div>
     Layout Padrão
-    <slot></slot>
+    <slot />
     Rodapé Padrão
   </div>
 </template>

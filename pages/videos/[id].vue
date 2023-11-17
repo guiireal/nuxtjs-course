@@ -4,7 +4,7 @@
   <VideoControllerPlay />
 </template>
 
-<script setup>
+<script setup lang="ts">
 definePageMeta({
   layout: "show",
   middleware: ["video", "auth"],

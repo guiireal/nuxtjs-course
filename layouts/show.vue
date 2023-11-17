@@ -2,7 +2,7 @@
   <div>
     <NuxtLink to="/">Voltar</NuxtLink>
     Layout Exibição
-    <slot></slot>
+    <slot />
     Rodapé Exibição
   </div>
 </template>

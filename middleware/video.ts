@@ -1,4 +1,4 @@
-export default defineNuxtRouteMiddleware((to, from) => {
+export default defineNuxtRouteMiddleware((to) => {
   const id = +to.params.id;
 
   if (isNaN(id) || id < 1) {
