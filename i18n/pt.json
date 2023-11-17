@@ -1,6 +1,7 @@
 {
     "pt": {
         "title": "Meus Vídeos",
-        "titleFavorites": "Meus Favoritos"
+        "titleFavorites": "Meus Favoritos",
+        "textButtonAddFavorite": "Adicionar favorito"
     }
 }
