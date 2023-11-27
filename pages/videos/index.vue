@@ -67,6 +67,7 @@ const videos: Video[] = [
     created_at: "2023-10-05",
   },
 ];
+
 const { $toast } = useNuxtApp();
 
 onMounted(() => {
