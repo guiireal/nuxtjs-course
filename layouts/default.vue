@@ -48,6 +48,12 @@
             Videos
           </NuxtLink>
           <NuxtLink
+            to="/videos/create"
+            class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+          >
+            Adicionar vídeo
+          </NuxtLink>
+          <NuxtLink
             to="/videos/favorites"
             class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
           >
